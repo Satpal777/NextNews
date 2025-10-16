@@ -1,7 +1,7 @@
-# 📰 NextNews — AI-Powered News Summarizer (Next.js)
+# 📰 NextNews — AI-Powered News Summarizer (Next.js and ShadCN)
 
-NextNews is a modern **Next.js** web application that aggregates the latest headlines from **NewsAPI** and generates **AI summaries** for each article using models like **OpenAI** or **Groq**.  
-It’s designed for speed, simplicity, and intelligence — bringing real-time **news + weather updates** together with **AI-powered insights**.
+NextNews is a modern Next.js web application that aggregates the latest headlines from NewsAPI and generates AI summaries for each article using models like **Llama-3.3-70B-Versatile** and **Groq** as the inference platform. 
+It’s designed for speed, simplicity, and intelligence — bringing real-time **news + weather updates** together with **AI-powered insights** and a **sleek ShadCN UI**.
 
 ---
 
