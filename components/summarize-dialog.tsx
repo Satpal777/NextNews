@@ -49,7 +49,7 @@ export function AISummaryDialog({
   const imageUrl = article?.urlToImage || article?.image || "/placeholder.svg?height=320&width=480"
   const source = article?.source?.name || "News"
   const byline = [article?.author, source].filter(Boolean).join(" • ")
-  const published = article?.publishedAt ? new Date(article.publishedAt).toLocaleString() : null
+  const published = article?.publishedAt ? article.publishedAt : null
   const contentForAI = useMemo(() => {
     return article?.content || article?.description || ""
   }, [article])
