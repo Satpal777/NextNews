@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📰 NextNews — AI-Powered News Summarizer (Next.js)
 
-## Getting Started
+NextNews is a modern **Next.js** web application that aggregates the latest headlines from **NewsAPI** and generates **AI summaries** for each article using models like **OpenAI** or **Groq**.  
+It’s designed for speed, simplicity, and intelligence — bringing real-time **news + weather updates** together with **AI-powered insights**.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+| Feature | Status | Description |
+|----------|---------|-------------|
+| 🗞️ **Top Headlines** | ✅ Done | Fetches top headlines and live articles from **NewsAPI** |
+| 🤖 **AI Summarization** | ✅ Done | Uses **OpenAI** or **Groq** models to summarize news articles |
+| 🌦️ **Weather Integration** | ✅ Done | Displays current weather data via **OpenWeather API** |
+| 🧠 **Read-Time & Bullet Summaries** | 🚧 In Progress | Adds estimated reading time and concise TL;DR bullet points |
+| 🔒 **NextAuth Authentication** | ✅ Done | Provides secure login and session management |
+| ⚡ **Server-Side Caching & ISR** | 🚧 In Progress | Improves load times and API efficiency using caching and incremental static regeneration |
+| 📱 **Responsive UI** | ✅ Done | Mobile-friendly interface built with responsive design principles |
+
+---
+
+## 🏗️ Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| Framework | **Next.js (React 18)** |
+| Authentication | **NextAuth.js** |
+| AI Summarization | **OpenAI / Groq** |
+| News Data | **NewsAPI.org** |
+| Weather Data | **OpenWeather API** |
+| Hosting | **Vercel** |
+| Styling | **TailwindCSS** |
+
+---
+
+## ⚙️ Environment Variables
+
+Create a `.env.local` file in your project root and configure the following:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 🔐 Authentication
+NEXTAUTH_SECRET=your_nextauth_secret_here
+NEXTAUTH_URL=http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 📰 News API
+NEWS_API_KEY=your_newsapi_key_here
+NEWS_API_URL=https://newsapi.org/v2/top-headlines
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 🌤️ Weather API
+WEATHER_KEY=your_openweather_api_key_here
+WEATHER_URL=https://api.openweathermap.org/data/2.5/weather
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🤖 AI Summarization
+OPENAI_API_KEY=your_openai_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
