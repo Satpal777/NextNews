@@ -53,3 +53,14 @@ WEATHER_URL=https://api.openweathermap.org/data/2.5/weather
 # 🤖 AI Summarization
 OPENAI_API_KEY=your_openai_api_key_here
 GROQ_API_KEY=your_groq_api_key_here
+```
+
+## 🖼️ Preview
+
+Experience NextNews in action:
+
+![Homepage Preview](public/preview/homepage.png)  
+*Homepage with top headlines and AI summaries.*
+
+![Summarize News](public/preview/summarize.png)  
+*summarize news*
